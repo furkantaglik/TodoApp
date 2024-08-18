@@ -12,11 +12,6 @@ import {
 
 const todoRouter = new Hono();
 
-function wait(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-await wait(5000);
-
 todoRouter.post("/create", create);
 todoRouter.post("/update", update);
 
