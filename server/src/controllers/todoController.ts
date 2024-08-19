@@ -1,8 +1,8 @@
 import { and, desc, eq, ilike, or } from "drizzle-orm";
-import { db } from "../db/db";
-import { todos, users } from "../db/schema";
+import { db } from "../db/db.js";
+import { todos, users } from "../db/schema.js";
 import { Context } from "hono";
-import response from "../utils/response";
+import response from "../utils/response.js";
 
 export const create = async (c: Context) => {
   try {

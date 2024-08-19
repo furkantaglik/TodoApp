@@ -1,6 +1,6 @@
 import { Context, Next } from "hono";
 import jwt from "jsonwebtoken";
-import response from "../utils/response";
+import response from "../utils/response.js";
 
 const JWT_SECRET = process.env.JWT_SECRET_KEY;
 

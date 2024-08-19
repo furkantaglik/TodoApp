@@ -2,24 +2,30 @@
   "name": "server",
   "type": "module",
   "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel",
     "dev": "tsx watch src",
+    "build": "tsc",
     "migrate": "drizzle-kit generate & drizzle-kit migrate"
   },
   "dependencies": {
-    "@hono/node-server": "^1.11.3",
+    "@hono/node-server": "^1.12.1",
     "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
-    "drizzle-orm": "^0.31.2",
+    "drizzle-orm": "^0.31.4",
     "drizzle-zod": "^0.5.1",
-    "hono": "^4.4.7",
+    "hono": "^4.5.6",
     "jsonwebtoken": "^9.0.2",
     "postgres": "^3.4.4",
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/node": "^20.14.5",
-    "drizzle-kit": "^0.22.7",
-    "tsx": "^4.15.6",
-    "typescript": "^5.4.5"
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.12",
+    "@types/node": "^20.16.1",
+    "drizzle-kit": "^0.22.8",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4",
+    "vercel": "^32.7.2"
   }
 }

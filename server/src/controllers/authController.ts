@@ -1,8 +1,8 @@
 import { Context } from "hono";
-import { db } from "../db/db";
-import { users } from "../db/schema";
+import { db } from "../db/db.js";
+import { users } from "../db/schema.js";
 import { eq, or } from "drizzle-orm";
-import response from "../utils/response";
+import response from "../utils/response.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
